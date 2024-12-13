@@ -66,6 +66,10 @@ mvn spring-boot:run
 - **Create a Category:** `POST /api/categories`
 - **Update a Category:** `PUT /api/categories/{id}`
 - **Delete a Category:** `DELETE /api/categories/{id}`
+#### **Inventory Endpoints**
+- **Add quantiti to a product** `POST /api/inventory/add/{productID}?quantity={quantity}`
+- **Deduct quatntity from a product** `POST /api/inventory/deduct/{productID}?quantity={quantity}`
+- **Check the stock level** `GET /api/inventory/stock/{productID}`
 
 ---
 ## API Documentation
