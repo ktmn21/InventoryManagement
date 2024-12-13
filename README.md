@@ -66,3 +66,21 @@ mvn spring-boot:run
 - **Create a Category:** `POST /api/categories`
 - **Update a Category:** `PUT /api/categories/{id}`
 - **Delete a Category:** `DELETE /api/categories/{id}`
+
+---
+## API Documentation
+This project uses Springdoc OpenAPI for API documentation.
+Access the Swagger UI at http://localhost:8080/swagger-ui/index.html.
+---
+
+## Validation
+Input validation is implemented using `javax.validation` annotations:
+
+**Products:**
+- **Name: Must not be empty.**
+- **Price: Must be greater than 0.**
+**Categories:**
+- **Name: Must not be empty.**
+Validation errors return a 400 Bad Request with descriptive error messages.
+
+
