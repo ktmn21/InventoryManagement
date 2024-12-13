@@ -87,4 +87,13 @@ Input validation is implemented using `javax.validation` annotations:
 - **Name: Must not be empty.**
 Validation errors return a 400 Bad Request with descriptive error messages.
 
+---
+# FINAL NOTES !!!!
+for some reasons I coucnot commit changes where I added swagger to the project. So please, once you download the project, add this dependency to pom.xml file: <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
 
