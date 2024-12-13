@@ -76,10 +76,10 @@ Access the Swagger UI at http://localhost:8080/swagger-ui/index.html.
 ## Validation
 Input validation is implemented using `javax.validation` annotations:
 
-**Products:**
+#### Products:
 - **Name: Must not be empty.**
 - **Price: Must be greater than 0.**
-**Categories:**
+#### Categories:
 - **Name: Must not be empty.**
 Validation errors return a 400 Bad Request with descriptive error messages.
 
