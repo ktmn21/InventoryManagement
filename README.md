@@ -51,7 +51,7 @@ mvn spring-boot:run
  - **Swagger UI: Open http://localhost:8080/swagger-ui/index.html to explore the API documentation and test endpoints.**
 
 ## Sample API Endpoints
-**Product Endpoints**
+#### **Product Endpoints**
 - **Get All Products:** `GET /api/products`
 - **Get Product by ID:** `GET /api/products/{id}`
 - **Search Product by Name:** `GET /api/products/search?name={product_name}`
@@ -60,7 +60,7 @@ mvn spring-boot:run
 - **Create a Product:** `POST /api/products`
 - **Update a Product:** `PUT /api/products/{id}`
 - **Delete a Product:** `DELETE /api/products/{id}`
-**Category Endpoints**
+#### **Category Endpoints**
 - **Get All Categories:** `GET /api/categories`
 - **Get Category by ID:** `GET /api/categories/{id}`
 - **Create a Category:** `POST /api/categories`
