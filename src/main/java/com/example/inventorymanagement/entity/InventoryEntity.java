@@ -10,10 +10,11 @@ public class InventoryEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private int stockLevel;
 
-    @OneToMany(mappedBy = "category")
-    private List<ProductEntity> products;
+    @OneToOne
+    @JoinColumn(name = "product_id", unique = true)
+    private ProductEntity product;
 
     public Long getId() {
         return id;
@@ -23,19 +24,19 @@ public class InventoryEntity {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public int getStockLevel() {
+        return stockLevel;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setStockLevel(int stockLevel) {
+        this.stockLevel = stockLevel;
     }
 
-    public List<ProductEntity> getProducts() {
-        return products;
+    public ProductEntity getProduct() {
+        return product;
     }
 
-    public void setProducts(List<ProductEntity> products) {
-        this.products = products;
+    public void setProduct(ProductEntity product) {
+        this.product = product;
     }
 }

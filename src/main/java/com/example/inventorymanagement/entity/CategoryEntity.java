@@ -1,6 +1,9 @@
 package com.example.inventorymanagement.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+
 import java.util.List;
 
 @Entity
@@ -9,11 +12,11 @@ public class CategoryEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private int stockLevel;
+    @NotNull(message = "Category name cannot be null")
+    private String name;
 
-    @OneToOne
-    @JoinColumn(name = "product_id", unique = true)
-    private ProductEntity product;
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    private List<ProductEntity> products;
 
     public Long getId() {
         return id;
@@ -23,19 +26,19 @@ public class CategoryEntity {
         this.id = id;
     }
 
-    public int getStockLevel() {
-        return stockLevel;
+    public String getName() {
+        return name;
     }
 
-    public void setStockLevel(int stockLevel) {
-        this.stockLevel = stockLevel;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public ProductEntity getProduct() {
-        return product;
+    public List<ProductEntity> getProducts() {
+        return products;
     }
 
-    public void setProduct(ProductEntity product) {
-        this.product = product;
+    public void setProducts(List<ProductEntity> products) {
+        this.products = products;
     }
 }
