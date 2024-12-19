@@ -26,3 +26,42 @@
 2024-12-19T20:17:24.600+06:00  INFO 10696 --- [inventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-12-19T20:17:24.613+06:00  INFO 10696 --- [inventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-12-19T20:17:24.650+06:00  INFO 10696 --- [inventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-19T21:25:17.464+06:00  INFO 15112 --- [inventory] [restartedMain] c.e.i.InventoryManagementApplication     : Starting InventoryManagementApplication using Java 23.0.1 with PID 15112 (C:\Users\kutman.mukarapov\OneDrive - University of Central Asia\Desktop\InventoryManagement\target\classes started by 1000002291 in C:\Users\kutman.mukarapov\OneDrive - University of Central Asia\Desktop\InventoryManagement)
+2024-12-19T21:25:17.467+06:00 DEBUG 15112 --- [inventory] [restartedMain] c.e.i.InventoryManagementApplication     : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-19T21:25:17.468+06:00  INFO 15112 --- [inventory] [restartedMain] c.e.i.InventoryManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-12-19T21:25:17.532+06:00  INFO 15112 --- [inventory] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-19T21:25:17.532+06:00  INFO 15112 --- [inventory] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-19T21:25:18.312+06:00  INFO 15112 --- [inventory] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-19T21:25:18.361+06:00  INFO 15112 --- [inventory] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-12-19T21:25:18.843+06:00  INFO 15112 --- [inventory] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-19T21:25:18.855+06:00  INFO 15112 --- [inventory] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-19T21:25:18.855+06:00  INFO 15112 --- [inventory] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-19T21:25:18.901+06:00  INFO 15112 --- [inventory] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-19T21:25:18.902+06:00  INFO 15112 --- [inventory] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1368 ms
+2024-12-19T21:25:18.977+06:00  INFO 15112 --- [inventory] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-19T21:25:19.336+06:00  INFO 15112 --- [inventory] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12b3f50
+2024-12-19T21:25:19.338+06:00  INFO 15112 --- [inventory] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-19T21:25:19.414+06:00  INFO 15112 --- [inventory] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-19T21:25:19.462+06:00  INFO 15112 --- [inventory] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-19T21:25:19.502+06:00  INFO 15112 --- [inventory] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-19T21:25:19.791+06:00  INFO 15112 --- [inventory] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-19T21:25:19.893+06:00  INFO 15112 --- [inventory] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-19T21:25:20.754+06:00  INFO 15112 --- [inventory] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-19T21:25:20.822+06:00  INFO 15112 --- [inventory] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-19T21:25:21.101+06:00  INFO 15112 --- [inventory] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-19T21:25:21.584+06:00  WARN 15112 --- [inventory] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-19T21:25:21.966+06:00  INFO 15112 --- [inventory] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-19T21:25:22.002+06:00  INFO 15112 --- [inventory] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-19T21:25:22.012+06:00  INFO 15112 --- [inventory] [restartedMain] c.e.i.InventoryManagementApplication     : Started InventoryManagementApplication in 4.949 seconds (process running for 5.767)
+2024-12-19T21:25:26.006+06:00  INFO 15112 --- [inventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-19T21:25:26.035+06:00  INFO 15112 --- [inventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-19T21:25:26.042+06:00  INFO 15112 --- [inventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-19T21:25:26.047+06:00  INFO 15112 --- [inventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-19T21:25:26.056+06:00  INFO 15112 --- [inventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
